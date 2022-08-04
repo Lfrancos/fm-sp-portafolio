@@ -86,5 +86,16 @@
         max-width: 350px;
         margin-bottom: 1.5rem;
     }
- }
-
+}
+.bookings {
+    background-color: hsl(var(--color-black));
+    color: hsl(var(--color-white));
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    & p {
+        color: hsl(var(--color-white));
+    }
+}

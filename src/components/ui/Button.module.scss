@@ -4,10 +4,12 @@
      border-radius: 30px;
      font-size: 14;
      font-weight: 700;
+     border: 1px solid hsl(var(--color-white));
 }
 .black {
      background-color: hsl(var(--color-black));
      color: hsl(var(--color-white));
+     border: 1px solid hsl(var(--color-black));
 }
 .red {
      background-color: hsl(var(--color-orange-red));

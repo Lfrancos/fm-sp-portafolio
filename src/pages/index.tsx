@@ -62,8 +62,19 @@ const Home: NextPage = () => {
               I&apos;ve designed everything from brand illustrations to complete
               mobile apps. I&apos;m also handy with a camera!
             </p>
-            <Button name='Free Consultation' color='red' />
+            <Button name="Free Consultation" color="red" />
           </div>
+        </div>
+
+        {/* this is the bookings */}
+        <div className={styles.bookings}>
+          <h2>Book a call with me</h2>
+          <p>
+            I&apos;d love to have a chat to see how I can help you. The best first
+            step is for us to discuss your project during a free consultation.
+            Then we can move forward from there.
+          </p>
+          <Button name="Free Consultation" color="red" />
         </div>
       </>
     </MainLayout>

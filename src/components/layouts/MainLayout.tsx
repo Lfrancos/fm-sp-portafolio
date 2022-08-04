@@ -17,6 +17,7 @@ export const MainLayout: FC<Props> = ({title, children}) => {
         <main>
             {children}
         </main>
+        <NavBar />
     </>
   )
 }
