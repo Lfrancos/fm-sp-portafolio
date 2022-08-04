@@ -1,9 +1,10 @@
 import styles from './Button.module.scss';
 interface Props {
     name: string;
+    color: string;
 }
-export const Button = ({name}: Props) => {
+export const Button = ({name, color = 'back'}: Props) => {
   return (
-    <button className={styles.button}>{name}</button>
+    <button className={`${styles.button} ${styles[color]}`}>{name}</button>
   )
 }

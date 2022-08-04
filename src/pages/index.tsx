@@ -2,7 +2,8 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import { MainLayout } from "../components/layouts/MainLayout";
 import styles from "./index.module.scss";
-import Data from "../data/mosaic.json" assert {type: 'json'};
+import Data from "../data/mosaic.json" assert { type: "json" };
+import { Button } from "../components/ui/Button";
 
 const Home: NextPage = () => {
   return (
@@ -21,9 +22,12 @@ const Home: NextPage = () => {
         */}
 
         <div className={styles.mosaic}>
-          {Data.mosaic.map(({className, name, width, height, img}) => {
+          {Data.mosaic.map(({ className, name, width, height, img }) => {
             return (
-              <div key={className} className={`${styles.gridItem} ${styles[className]}`}>
+              <div
+                key={className}
+                className={`${styles.gridItem} ${styles[className]}`}
+              >
                 <div className={`${styles.image} `}>
                   <Image
                     src={`/assets/${img}`}
@@ -32,10 +36,34 @@ const Home: NextPage = () => {
                     width={width}
                   />
                 </div>
-                <h2 className={styles.text}>{name}</h2>
+                <h3 className={styles.text}>{name}</h3>
               </div>
             );
           })}
+        </div>
+
+        {/* this is the about section */}
+
+        <div className={`${styles.about}`}>
+          <div className={styles.image}>
+            <Image
+              src="/assets/image-amy.webp"
+              alt="amy"
+              width={300}
+              height={300}
+            />
+          </div>
+          <div>
+            <h2>
+              I&apos;m Amy, and I&apos;d love to work on your next project
+            </h2>
+            <p>
+              I love working with others to create beautiful design solutions.
+              I&apos;ve designed everything from brand illustrations to complete
+              mobile apps. I&apos;m also handy with a camera!
+            </p>
+            <Button name='Free Consultation' color='red' />
+          </div>
         </div>
       </>
     </MainLayout>
