@@ -2,8 +2,9 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import { MainLayout } from "../components/layouts/MainLayout";
 import styles from "./index.module.scss";
-import Data from "../data/mosaic.json" assert { type: "json" };
+import Data from "../data/data.json" assert { type: "json" };
 import { Button } from "../components/ui/Button";
+import { Gallery } from '../components/ui/Gallery';
 
 const Home: NextPage = () => {
   return (
@@ -17,12 +18,12 @@ const Home: NextPage = () => {
           </p>
         </div>
 
-        {/* this is the mosaic
+        {/* this is the grid of skills
           if you want to change the dimensions or name or anything you should do it from the data JSON file
         */}
 
         <div className={styles.mosaic}>
-          {Data.mosaic.map(({ className, name, width, height, img }) => {
+          {Data.grid.map(({ className, name, width, height, img }) => {
             return (
               <div
                 key={className}
@@ -66,7 +67,12 @@ const Home: NextPage = () => {
           </div>
         </div>
 
+        {/* gallery */}
+
+        <Gallery />
+
         {/* this is the bookings */}
+
         <div className={styles.bookings}>
           <h2>Book a call with me</h2>
           <p>
