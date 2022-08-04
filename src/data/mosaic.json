@@ -1,0 +1,46 @@
+{
+  "mosaic": [
+    {
+      "name": "Graphic design",
+      "className": "graphicDesign",
+      "img": "pattern-graphic-design.svg",
+      "height": 250,
+      "width": 170
+    },
+    {
+      "name": "Ui/Ux",
+      "className": "uiUx",
+      "img": "pattern-ui-ux.svg",
+      "height": 70,
+      "width": 70
+    },
+    {
+      "name": "Apps",
+      "className": "apps",
+      "img": "pattern-apps.svg",
+      "height": 70,
+      "width": 70
+    },
+    {
+      "name": "Illustration",
+      "className": "illustrations",
+      "img": "pattern-illustrations.svg",
+      "height": 80,
+      "width": 160
+    },
+    {
+      "name": "Photography",
+      "className": "photography",
+      "img": "pattern-photography.svg",
+      "height": 80,
+      "width": 200
+    },
+    {
+      "name": "Motion graphics",
+      "className": "motionGraphics",
+      "img": "pattern-motion-graphics.svg",
+      "height": 80,
+      "width": 160
+    }
+  ]
+}

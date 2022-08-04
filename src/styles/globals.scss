@@ -1,0 +1,23 @@
+:root {
+    --color-black: 0, 0%, 1%;
+    --color-purple: 252, 66%, 62%;
+    --color-burgundy: 314, 45%, 23%;
+    --color-orange: 28, 89%, 67%;
+    --color-pink: 0, 78%, 79%;
+    --color-orange-red: 7, 77%, 66%;
+    --color-cyan: 172, 46%, 57%;
+    --color-gray: 30, 5%, 45%;
+    --color-white: 28, 100%, 97%;
+}
+html {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 24px;
+}
+p {
+    font-weight: 300;
+}

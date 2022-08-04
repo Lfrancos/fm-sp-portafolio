@@ -1,0 +1,72 @@
+.intro {
+  text-align: center;
+  max-width: 350px;
+  margin: 0 auto;
+  & p {
+    padding: 0 1rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    // max-width: 300;
+  }
+}
+.mosaic {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 200px;
+  grid-template-areas:
+    "graphicDesign graphicDesign"
+    "graphicDesign graphicDesign"
+    "uiUx apps"
+    "illustrations illustrations"
+    "photography photography"
+    "motionGraphics motionGraphics";
+    .gridItem {
+      border-radius: 10px;
+      padding: 1rem;
+      text-align:floor($number: 0);
+      font-size: 24px;
+      font-weight: 700;
+      color: hsl(var(--color-white));
+      position: relative;
+    }
+    .graphicDesign {
+      background-color: hsl(var(--color-purple));
+      grid-area: graphicDesign;
+    }
+    .uiUx {
+      background-color: hsl(var(--color-orange));
+      grid-area: uiUx;
+    }
+    .apps {
+      background-color: hsl(var(--color-pink));
+      grid-area: apps;
+    }
+    .illustrations {
+      background-color: hsl(var(--color-orange-red));
+      grid-area: illustrations;
+    }
+    .photography {
+      grid-area: photography;
+      background-color: hsl(var(--color-cyan));
+    }
+    .motionGraphics {
+      grid-area: motionGraphics;
+      background-color: hsl(var(--color-burgundy));
+    }
+    .image {
+        width: fit-content;
+        margin-right: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 1rem;
+    }
+    .text {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin: 1rem;
+    }
+}
+
