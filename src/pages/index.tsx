@@ -4,7 +4,7 @@ import { MainLayout } from "../components/layouts/MainLayout";
 import styles from "./index.module.scss";
 import Data from "../data/data.json" assert { type: "json" };
 import { Button } from "../components/ui/Button";
-import { Gallery } from '../components/ui/Gallery';
+import { Gallery } from "../components/ui/Gallery";
 
 const Home: NextPage = () => {
   return (
@@ -47,12 +47,15 @@ const Home: NextPage = () => {
 
         <div className={`${styles.about}`}>
           <div className={styles.image}>
-            <Image
-              src="/assets/image-amy.webp"
-              alt="amy"
-              width={300}
-              height={300}
-            />
+            <div className={styles.position}>
+              <Image
+                src="/assets/image-amy.webp"
+                layout='responsive'
+                width={300}
+                height={300}
+                alt="amy"
+              />
+            </div>
           </div>
           <div className={styles.textContainer}>
             <h2>
@@ -76,9 +79,9 @@ const Home: NextPage = () => {
         <div className={styles.bookings}>
           <h2>Book a call with me</h2>
           <p>
-            I&apos;d love to have a chat to see how I can help you. The best first
-            step is for us to discuss your project during a free consultation.
-            Then we can move forward from there.
+            I&apos;d love to have a chat to see how I can help you. The best
+            first step is for us to discuss your project during a free
+            consultation. Then we can move forward from there.
           </p>
           <Button name="Free Consultation" color="red" />
         </div>
