@@ -9,6 +9,10 @@
      font-weight: 700;
      border: 1px solid hsl(var(--color-white));
      cursor: pointer;
+     @include breakpoint($ipad) {
+          font-size: 1rem;
+          padding: 20px 30px;
+     }
 }
 .black {
      background-color: hsl(var(--color-black));

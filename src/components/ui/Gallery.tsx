@@ -39,6 +39,7 @@ export const Gallery = () => {
           <div className={styles.image}>
             <Image
               src={`/assets/${gallery[before]}`}
+              layout='responsive'
               width={800}
               height={500}
               alt="im"
@@ -47,6 +48,7 @@ export const Gallery = () => {
           <div className={styles.image}>
             <Image
               src={`/assets/${gallery[currentImage]}`}
+              layout='responsive'
               width={800}
               height={500}
               alt="im"
@@ -55,6 +57,7 @@ export const Gallery = () => {
           <div className={styles.image}>
             <Image
               src={`/assets/${gallery[after]}`}
+              layout='responsive'
               width={800}
               height={500}
               alt="im"
