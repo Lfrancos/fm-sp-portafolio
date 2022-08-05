@@ -50,7 +50,7 @@ const Home: NextPage = () => {
             <div className={styles.position}>
               <Image
                 src="/assets/image-amy.webp"
-                layout='responsive'
+                layout="responsive"
                 width={300}
                 height={300}
                 alt="amy"
@@ -77,13 +77,17 @@ const Home: NextPage = () => {
         {/* this is the bookings */}
 
         <div className={styles.bookings}>
-          <h2>Book a call with me</h2>
-          <p>
-            I&apos;d love to have a chat to see how I can help you. The best
-            first step is for us to discuss your project during a free
-            consultation. Then we can move forward from there.
-          </p>
-          <Button name="Free Consultation" color="red" />
+          <div>
+            <h2>Book a call with me</h2>
+            <p>
+              I&apos;d love to have a chat to see how I can help you. The best
+              first step is for us to discuss your project during a free
+              consultation. Then we can move forward from there.
+            </p>
+          </div>
+          <div>
+            <Button name="Free Consultation" color="red" />
+          </div>
         </div>
       </>
     </MainLayout>
