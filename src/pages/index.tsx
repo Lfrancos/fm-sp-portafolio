@@ -54,7 +54,7 @@ const Home: NextPage = () => {
               height={300}
             />
           </div>
-          <div>
+          <div className={styles.textContainer}>
             <h2>
               I&apos;m Amy, and I&apos;d love to work on your next project
             </h2>

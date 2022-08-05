@@ -39,24 +39,24 @@ export const Gallery = () => {
           <div className={styles.image}>
             <Image
               src={`/assets/${gallery[before]}`}
-              width={300}
-              height={200}
+              width={800}
+              height={500}
               alt="im"
             />
           </div>
           <div className={styles.image}>
             <Image
               src={`/assets/${gallery[currentImage]}`}
-              width={300}
-              height={200}
+              width={800}
+              height={500}
               alt="im"
             />
           </div>
           <div className={styles.image}>
             <Image
               src={`/assets/${gallery[after]}`}
-              width={300}
-              height={200}
+              width={800}
+              height={500}
               alt="im"
             />
           </div>
@@ -71,8 +71,8 @@ export const Gallery = () => {
             <Image
               src="/assets/icon-arrow-left.svg"
               alt="arrow"
-              width={20}
-              height={20}
+              width={10}
+              height={10}
             />
           </div>
         </div>
@@ -81,8 +81,8 @@ export const Gallery = () => {
             <Image
               src="/assets/icon-arrow-right.svg"
               alt="arrow"
-              width={20}
-              height={20}
+              width={10}
+              height={10}
             />
           </div>
         </div>

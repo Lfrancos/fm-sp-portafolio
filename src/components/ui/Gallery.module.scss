@@ -1,3 +1,7 @@
+@use '../../styles/variables.module.scss' as *;
+@use '../../styles/mixins.module.scss' as *;
+
+
 
 .gallery {
     margin: 4rem auto;
@@ -6,8 +10,11 @@
         overflow: hidden;
         position: relative;
         width: 100%;
-        min-height: 173px;
+        min-height: 215px;
         margin-bottom: 1.5rem;
+        @include breakpoint($ipad) {
+            min-height: 360px;
+        }
     }
 }
 .arrows {
@@ -30,24 +37,27 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -45%)
+    transform: translate(-50%, -55%)
 }
+
+
 .images {
+    padding: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     width: 800px;
-    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    @include breakpoint($ipad) {
+        width: 1700px;
+    }
 
 }
 .image {
-    margin: 0 auto;
-    width: fit-content;
     overflow: hidden;
     border-radius: 10px;
-    // padding: 300px;
 }

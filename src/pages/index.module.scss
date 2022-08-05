@@ -1,3 +1,6 @@
+@use "../styles//variables.module.scss" as *;
+@use "../styles/mixins.module.scss" as *;
+
 .intro {
   text-align: center;
   max-width: 350px;
@@ -8,7 +11,11 @@
     margin-bottom: 2rem;
     // max-width: 300;
   }
+  @include breakpoint($ipad) {
+    max-width: 550px;
+  }
 }
+
 .mosaic {
   display: grid;
   gap: 20px;
@@ -22,80 +29,121 @@
     "illustrations illustrations"
     "photography photography"
     "motionGraphics motionGraphics";
-    .gridItem {
-      border-radius: 10px;
-      padding: 1rem;
-      text-align:floor($number: 0);
-      font-size: 24px;
-      font-weight: 700;
-      color: hsl(var(--color-white));
-      position: relative;
-    }
-    .graphicDesign {
-      background-color: hsl(var(--color-purple));
-      grid-area: graphicDesign;
-    }
-    .uiUx {
-      background-color: hsl(var(--color-orange));
-      grid-area: uiUx;
-    }
-    .apps {
-      background-color: hsl(var(--color-pink));
-      grid-area: apps;
-    }
-    .illustrations {
-      background-color: hsl(var(--color-orange-red));
-      grid-area: illustrations;
-    }
-    .photography {
-      grid-area: photography;
-      background-color: hsl(var(--color-cyan));
-    }
-    .motionGraphics {
-      grid-area: motionGraphics;
-      background-color: hsl(var(--color-burgundy));
-    }
-    .image {
-        width: fit-content;
-        margin-right: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        margin: 1rem;
-    }
-    .text {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        margin: 1rem;
-    }
+
+  // @media screen and (min-width: 700px) {
+
+  // }
+  @include breakpoint($ipad) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "graphicDesign graphicDesign uiUx apps"
+      "graphicDesign graphicDesign illustrations illustrations"
+      "photography photography motionGraphics motionGraphics";
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .gridItem {
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: floor($number: 0);
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(var(--color-white));
+    position: relative;
+  }
+  .graphicDesign {
+    background-color: hsl(var(--color-purple));
+    grid-area: graphicDesign;
+  }
+  .uiUx {
+    background-color: hsl(var(--color-orange));
+    grid-area: uiUx;
+  }
+  .apps {
+    background-color: hsl(var(--color-pink));
+    grid-area: apps;
+  }
+  .illustrations {
+    background-color: hsl(var(--color-orange-red));
+    grid-area: illustrations;
+  }
+  .photography {
+    grid-area: photography;
+    background-color: hsl(var(--color-cyan));
+  }
+  .motionGraphics {
+    grid-area: motionGraphics;
+    background-color: hsl(var(--color-burgundy));
+  }
+  .image {
+    width: fit-content;
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1rem;
+  }
+  .text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 1rem;
+  }
 }
 
 .about {
-    margin: 0 auto;
+  margin: 0 auto;
+  text-align: center;
+  @include breakpoint($ipad) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    & .button {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
 
+  &.image {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+  }
+  .textContainer {
     text-align: center;
-    &.image {
+    @include breakpoint($ipad) {
+      max-width: 270px;
+      text-align: left;
+      padding: 2rem;
+    }
+  }
 
-        width: 300px;
-        height: 300px;
-        overflow: hidden;
-        margin-bottom: 3rem;
+  & p {
+    margin: 0 auto;
+    max-width: 350px;
+    margin-bottom: 1.5rem;
+    @include breakpoint($ipad) {
+      margin: 0;
+      margin-bottom: 1.5rem;
+      width: 100%;
     }
-    & p {
-        max-width: 350px;
-        margin-bottom: 1.5rem;
-    }
+  }
 }
 .bookings {
-    background-color: hsl(var(--color-black));
+  background-color: hsl(var(--color-black));
+  color: hsl(var(--color-white));
+  margin: 1rem;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  & p {
+    margin: 0 auto;
     color: hsl(var(--color-white));
-    margin: 1rem;
-    border-radius: 10px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    & p {
-        color: hsl(var(--color-white));
-    }
+    max-width: 500px;
+    margin-bottom: 1.5rem;
+  }
 }

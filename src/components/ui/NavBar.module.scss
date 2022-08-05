@@ -1,3 +1,7 @@
+@use '../../styles/variables.module.scss' as *;
+@use '../../styles/mixins.module.scss' as *;
+
+
 .navContainer {
     display: flex;
     justify-content: space-between;

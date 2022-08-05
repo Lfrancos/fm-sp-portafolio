@@ -1,3 +1,6 @@
+@use '../../styles/variables.module.scss' as *;
+@use '../../styles/mixins.module.scss' as *;
+
 
 .button {
      padding: 13px 20px;
@@ -5,14 +8,23 @@
      font-size: 14;
      font-weight: 700;
      border: 1px solid hsl(var(--color-white));
+     cursor: pointer;
 }
 .black {
      background-color: hsl(var(--color-black));
      color: hsl(var(--color-white));
      border: 1px solid hsl(var(--color-black));
+     &:hover {
+          background-color: hsl(var(--color-purple));
+          border: 1px solid hsl(var(--color-purple));
+     }
 }
 .red {
      background-color: hsl(var(--color-orange-red));
      color: hsl(var(--color-white));
      border: 1px solid hsl(var(--color-orange-red));
+     &:hover {
+          background-color: hsl(var(--color-orange));
+          border: 1px solid hsl(var(--color-orange));
+     }
 }
