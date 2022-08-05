@@ -11,7 +11,7 @@ const gallery = [
 ];
 export const Gallery = () => {
 
-    const [ currentImage , setCurrentImage] = useState(2);
+    const [ currentImage , setCurrentImage] = useState(1);
 
     const handleClickRight = () => {
         if (currentImage === gallery.length - 1) {
@@ -27,6 +27,8 @@ export const Gallery = () => {
             setCurrentImage(currentImage - 1);
         }
     }
+    const before =  currentImage === 0 ?  4 :  currentImage - 1;
+    const after =  currentImage === 4 ?  1 :  currentImage + 1;
 
   return (
     <div className={styles.gallery}>
@@ -36,7 +38,7 @@ export const Gallery = () => {
         <div className={styles.images}>
           <div className={styles.image}>
             <Image
-              src={`/assets/${gallery[currentImage - 1]}`}
+              src={`/assets/${gallery[before]}`}
               width={300}
               height={200}
               alt="im"
@@ -52,7 +54,7 @@ export const Gallery = () => {
           </div>
           <div className={styles.image}>
             <Image
-              src={`/assets/${gallery[currentImage + 1]}`}
+              src={`/assets/${gallery[after]}`}
               width={300}
               height={200}
               alt="im"
