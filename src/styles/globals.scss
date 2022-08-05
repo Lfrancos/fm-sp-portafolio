@@ -1,4 +1,5 @@
-
+@use './variables.module.scss' as *;
+@use './mixins.module.scss' as *;
 :root {
     --color-black: 0, 0%, 1%;
     --color-purple: 252, 66%, 62%;
@@ -15,9 +16,15 @@ html {
 }
 h1 {
     font-size: 36px;
+    @include breakpoint($ipad) {
+        font-size: 44px;
+    }
 }
 h2 {
     font-size: 26px;
+    @include breakpoint($ipad) {
+        font-size: 32px;
+    }
 }
 h3 {
     font-size: 24px;
@@ -26,4 +33,7 @@ p {
     font-weight: 300;
     font-size: 16px;
     color: hsl(var(--color-gray));
+    @include breakpoint($ipad) {
+        font-size: 18px;
+    }
 }

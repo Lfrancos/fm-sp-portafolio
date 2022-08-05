@@ -30,14 +30,24 @@
     position: relative;
     margin: 0;
     padding: 0;
+    cursor: pointer;
+    &:hover {
+        background-color: hsl(var(--color-purple));
+    }
+    @include breakpoint($ipad) {
+        width: 50px;
+        height: 50px;
+    }
 }
 .position {
-    margin: 0;
-    padding: 0;
+    width: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -55%)
+    transform: translate(-50%, -55%);
+    @include breakpoint($ipad) {
+        width: 15px;
+    }
 }
 
 

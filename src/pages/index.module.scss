@@ -12,7 +12,7 @@
     // max-width: 300;
   }
   @include breakpoint($ipad) {
-    max-width: 550px;
+    max-width: 600px;
   }
 }
 
@@ -112,12 +112,6 @@
     overflow: hidden;
     margin-bottom: 3rem;
     margin: 0 auto;
-    // @include breakpoint($ipad) {
-    //     width: 300px;
-    //     position: absolute;
-    //     z-index: 9
-    //     //  top: 50%;
-    //     //  left: 50%;
   }
   .position {
     margin: 0 auto;

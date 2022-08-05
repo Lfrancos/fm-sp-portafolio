@@ -73,19 +73,21 @@ export const Gallery = () => {
           <div className={styles.position}>
             <Image
               src="/assets/icon-arrow-left.svg"
-              alt="arrow"
+              layout='responsive'
               width={10}
               height={10}
-            />
+              alt="arrow left"
+              />
           </div>
         </div>
         <div className={styles.btnArrows} onClick={ handleClickRight }>
           <div className={styles.position}>
             <Image
               src="/assets/icon-arrow-right.svg"
-              alt="arrow"
+              layout='responsive'
               width={10}
               height={10}
+              alt="arrow right"
             />
           </div>
         </div>
