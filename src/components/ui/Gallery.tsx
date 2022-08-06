@@ -69,7 +69,7 @@ export const Gallery = () => {
       {/* arrows */}
 
       <div className={styles.arrows}>
-        <div className={styles.btnArrows} onClick={ handleClickLeft }>
+        <button className={styles.btnArrows} onClick={ handleClickLeft }>
           <div className={styles.position}>
             <Image
               src="/assets/icon-arrow-left.svg"
@@ -79,8 +79,8 @@ export const Gallery = () => {
               alt="arrow left"
               />
           </div>
-        </div>
-        <div className={styles.btnArrows} onClick={ handleClickRight }>
+        </button>
+        <button className={styles.btnArrows} onClick={ handleClickRight }>
           <div className={styles.position}>
             <Image
               src="/assets/icon-arrow-right.svg"
@@ -90,7 +90,7 @@ export const Gallery = () => {
               alt="arrow right"
             />
           </div>
-        </div>
+        </button>
       </div>
     </div>
   );

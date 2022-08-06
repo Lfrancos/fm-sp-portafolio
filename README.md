@@ -67,7 +67,9 @@ I need to keep practicing my layout skills so that I don't have to think so much
 Something that I really need to pay more attention and I should not waste any more time is to practice more in [codewars](https://www.codewars.com/). I was doing it and stopped because I wanted to have a better base of react. I think that even though there are a lot of things that I still don't know and there are a lot of things that I should improve, I need to pay more attention to my problem solving skills. That is the real important thing to learn in software development.
 
 
-I need to pay more attention to accessibility. This is something that I have not pay to much attention but I understand how important it is : ) 
+I need to pay more attention to accessibility. This is something that I have not pay to much attention but I understand how important it is : )
+
+I was able to make the gallery work using the keyboard and the mouse, but I'm not sure how to see if it is working with a trackpad I need to keep investigating to se how that works.
 
 ### Useful resources
 
