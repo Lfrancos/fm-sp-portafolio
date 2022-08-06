@@ -1,3 +1,101 @@
+# Frontend Mentor - Single-page design portfolio solution
+
+This is a solution to the [Single-page design portfolio challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/singlepage-design-portfolio-2MMhyhfKVo). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+
+
+## Overview
+
+#### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Navigate the slider using either their mouse/trackpad or keyboard
+
+### Screenshot
+
+![](./public/assets/preview.jpg)
+
+
+### Links
+
+- Code URL: [here](https://github.com/Lfrancos/fm-sp-portafolio)
+- Live Site URL: [here](https://fm-sp-portafolio.vercel.app/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- CSS Grid
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+
+
+### What I learned
+
+This was a really interesting challenge, when I saw that I had to create gallery slider I got intimidated, since I had never done one. But It was really exiting to see that I was able to solve the problem with out any external help. Still I think that the logic that I came up with is far from being something for production.
+
+I'm also getting a little bit more familiar with the way the images work in Nextjs. I feel that they are not that intuitive but now I know that using:
+>```
+> "layout: "responsive"
+> ```
+With this layout responsive the width and height are just a reference for the aspect ratio of the image. That way you can add an image container on top of the Image and control it really easily.
+
+
+### Continued development
+
+I need to keep practicing my layout skills so that I don't have to think so much about it but I'm feeling really comfortable with what I'm doing.
+
+Something that I really need to pay more attention and I should not waste any more time is to practice more in [codewars](https://www.codewars.com/). I was doing it and stopped because I wanted to have a better base of react. I think that even though there are a lot of things that I still don't know and there are a lot of things that I should improve, I need to pay more attention to my problem solving skills. That is the real important thing to learn in software development.
+
+### Useful resources
+
+For this exercise in particular I didn't use any resources. But the resources that have helped me get a lot of knowledge and be able to solve something like this are:
+
+- [Code with Mosh](https://codewithmosh.com/) - I have taken a lot of courses in here. I highly recommend:
+
+  - Mastering react
+  - The Ultimate JavaScript part 1
+  - The Ultimate JavaScript part 2
+
+- [Web dev simplified](https://courses.webdevsimplified.com/) - I took javascript simplified and it helped me a ton to understand the basics of web development.
+
+- [Next.js: El framework de React para producción](https://www.udemy.com/course/nextjs-fh/learn/lecture/30687624) - This tutorial is in spanish but it is really good for learning and understanding how powerful Next JS is.
+## Author
+
+- Website - [@lorenzo.francos](https://www.lorenzofrancos.com)
+- Instagram - [@lorenzo.francos](https://www.instagram.com/lorenzo.francos/?hl=en)
+- Github - [@Lfrancos](https://github.com/Lfrancos)
+- Frontend Mentor - [@Lfrancos](https://www.frontendmentor.io/profile/Lfrancos)
+
+
+
+
+
+---
+---
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
