@@ -43,9 +43,8 @@ p {
 }
 
 button {
-    &:focus {
+    &:focus-visible {
         // padding: 20px;
-        
-        border: 5px solid red;
+        outline: 5px solid red;
     }
 }

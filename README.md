@@ -72,6 +72,11 @@ I need to pay more attention to accessibility. This is something that I have not
 I was able to make the gallery work using the keyboard and the mouse, but I'm not sure how to see if it is working with a trackpad I need to keep investigating to se how that works.
 
 Testing the website I realized that for accessibility I used the "selected" attribute in css so that you could see what you had selected with the keyboard. But realized that it also affected the styles when using the mouse. I need to figure out how to fix that.///
+```
+in regards to the problem I'm mentioning above Curtis Simpson someone from the front end mentor community helped me figure out how to solve it.
+instead of using "focus" I should use "focus-visible" and instead of "border" I should use the outline.
+```
+[Curtis Simpson](https://www.frontendmentor.io/profile/crsimpson5)
 
 ### Useful resources
 

@@ -1,0 +1,19 @@
+@use '../../styles/variables.module.scss' as *;
+@use '../../styles/mixins.module.scss' as *;
+
+
+.navContainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+}
+
+.logoContainer {
+    width: 48px;
+    overflow: hidden;
+    @include breakpoint($ipad) {
+        width: 64px;
+    }
+}

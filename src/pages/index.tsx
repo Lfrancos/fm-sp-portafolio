@@ -37,7 +37,7 @@ const Home: NextPage = () => {
                     width={width}
                   />
                 </div>
-                <h3 className={styles.text}>{name}</h3>
+                <h2 className={styles.text}>{name}</h2>
               </div>
             );
           })}

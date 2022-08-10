@@ -1,6 +1,7 @@
 import { FC, ReactElement } from "react"
 import Head from "next/head"
 import NavBar from './../ui/NavBar';
+import Footer from "../ui/Footer";
 
 interface Props {
     title: string;
@@ -17,7 +18,7 @@ export const MainLayout: FC<Props> = ({title, children}) => {
         <main>
             {children}
         </main>
-        <NavBar />
+        <Footer />
     </>
   )
 }
